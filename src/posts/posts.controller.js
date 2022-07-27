@@ -28,7 +28,7 @@ async function update(req, res) {
 
 async function destroy(req, res) {
 	// your solution here
-	await service.delete(res.locals.post_id).then(() => res.sendStatus(204))
+	await service.delete(res.locals.post.post_id).then(() => res.sendStatus(204))
 }
 
 module.exports = {
